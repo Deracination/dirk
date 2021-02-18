@@ -191,7 +191,7 @@
         e.target.classList.add('controls__control--active');
       },
       handleDragleave(e) {
-        e.target.classList.remove('controls__control--active');
+        e.target.classList && e.target.classList.remove('controls__control--active');
       },
       handleDelete() {
         if (this.$parent.children.length === 1) {
